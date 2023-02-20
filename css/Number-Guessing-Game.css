@@ -1,6 +1,5 @@
 body {
     background-color: coral;
-    /* background-image: url(../images/numbers-jumble.jpg); */
     background-image: url(../images/numbers-vortex.jpg);
     background-size: 100%;
     background-position: bottom;
@@ -70,7 +69,6 @@ button {
     cursor: pointer;
     color: #fff;
     background-color: coral;
-    /* border-radius: 20px; */
 }
 
 #guess-btn {
@@ -96,7 +94,6 @@ footer {
 #score-box {
     display: flex;
     justify-content: space-around;
-    /* opacity: 0; */
 }
 #num {
     width: 300px;
