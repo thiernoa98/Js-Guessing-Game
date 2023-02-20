@@ -1,6 +1,5 @@
-// Lesson 03.09 Start
 // Guess the Mystery Number
-// In this lesson we will write a number guessing program:
+
 
 // First we need a few global variables.
 let randNum = 0;
