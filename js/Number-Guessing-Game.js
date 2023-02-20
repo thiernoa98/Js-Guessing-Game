@@ -1,12 +1,9 @@
 // Guess the Mystery Number
 
-
-// First we need a few global variables.
 let randNum = 0;
 let playerGuess = 0; //the num guessed
 let guessLeft = 7;
 
-//the footer vars, games played and guessing average
 let gamesPlayed = 0, guessAvg = 0, totalGuesses = 0;
 
 // Next, get the DOM elements used for the game. 
