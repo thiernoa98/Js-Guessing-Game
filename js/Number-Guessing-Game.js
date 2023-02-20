@@ -5,24 +5,20 @@ let playerGuess = 0; //the num guessed
 let guessLeft = 7;
 
 let gamesPlayed = 0, guessAvg = 0, totalGuesses = 0;
-
-// Next, get the DOM elements used for the game. 
+ 
 const playBtn = document.getElementById('play-btn');
 const guessBtn = document.getElementById('guess-btn');
 
-//the footer spans for games played and guessed ave
 const totGamesSpan = document.getElementById('tot-games-span');
 const guessAvgSpan = document.getElementById('guess-avg-span');
 
-// Have each button listen for its respective function to call when clicked.
 playBtn.addEventListener('click', playGame);
 guessBtn.addEventListener('click', evalGuess);
 
-// get the "guess box" (number input box), which is also hidden by CSS on page load :
-//the input is from the querySelector(), its used to get the html inputs
+
 let guessInputBox = document.querySelector('input'); 
-//console.log(guessInputBox);
-// Get the h2 that displays the feedback:
+
+//hoisting
 const feedback = document.getElementById('feedback');
 
 // Declare the playGame function, which runs when the player clicks the PLAY button. 
@@ -36,14 +32,10 @@ function playGame() {
     guessBtn.style.display = 'inline';
     feedback.style.display = 'inline-block';
 
-    //reset
-    // playerGuess = 0;
-    // guessLeft = 7;
-    // guessInputBox.value ;
     feedback.textContent = "Guess the mystery number from 1-100";
 }
 
-// The evalGuess function runs when the user clicks the GUESS button. This function gets the value from the input box and converts it to a real number using the Number() method.
+//evaluate the game
 function evalGuess() {
     totalGuesses ++; //each time we guess a num we increease by 1
     guessLeft --; //substtract each time they get it wrong
@@ -66,6 +58,7 @@ function evalGuess() {
     }
 }
 
+//reset 
 function resetGame() {
     playerGuess = 0;
     guessLeft = 7;
