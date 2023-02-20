@@ -76,18 +76,3 @@ function resetGame() {
     totGamesSpan.textContent = gamesPlayed;
     guessAvgSpan.textContent = guessAvg;
 }
-/* 
-- if the guess is too low, user gets feedback (too LOW) and guesses again
-- else if the guess is too low, user gets feedback (too HIGH) and guesses again 
-- else guess matches mystery number, so user is congratulated and GUESS button is replaced by PLAY AGAIN button
-- user gets 7 guesses, which count down and are displayed with each guess
-- when the user gets it right, the resetGame()
- function is called
- */
-
-
-// The resetGame function is called when the user guesses correctly. The function restores all the settings as they are on page load. 
-
-
-
-   
