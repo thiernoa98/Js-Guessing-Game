@@ -1,0 +1,103 @@
+body {
+    background-color: coral;
+    /* background-image: url(../images/numbers-jumble.jpg); */
+    background-image: url(../images/numbers-vortex.jpg);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    line-height: 2em;
+    font-size: 0.9em;
+    color: #111;
+    margin:0;
+}
+
+.container {
+    width: 500px;
+    margin: 30px auto;
+    padding: 80px;
+    border: 5px solid coral;
+    background-color: rgba(222, 222, 244), .5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    min-height: 50vh;
+    border-radius: 280px;
+}
+
+h1 {
+    color: black;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 20px 50px;
+    border: 5px solid coral;
+    width: 70%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    line-height: 2em;
+    color: #522;
+    background-color: #fff;
+    padding: 10px;
+    width: 170px;
+    text-align: center;
+    margin: 0 auto;
+    border: 3px solid #555;
+}
+
+input, button {
+    padding: 15px;
+    margin: 15px;
+    font-size: 1.5em;
+    width: 150px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    border: 3px solid #555;
+    display: inline-block;
+}
+
+input {
+    width: 120px;
+    display: none;
+}
+
+button {
+    cursor: pointer;
+    color: #fff;
+    background-color: coral;
+    /* border-radius: 20px; */
+}
+
+#guess-btn {
+    display: none;
+}
+
+#feedback {
+    display: none;
+    width: 90%;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: coral;
+    margin:0;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#score-box {
+    display: flex;
+    justify-content: space-around;
+    /* opacity: 0; */
+}
+#num {
+    width: 300px;
+}
